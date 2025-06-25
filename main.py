@@ -12,13 +12,13 @@ def run_script(script_name):
 if __name__ == "__main__":
     try:
         # Step 0: Analyze PCAP file (will use capture.pcap automatically)
-        run_script("t2.py")
+        run_script("pcap_analyzer.py")
         
         # Step 1: Detect malicious IPs
         run_script("abuseip.py")
         
         # Step 2: Generate Groq LLM recommendations
-        run_script("groq2.py")
+        run_script("groq.py")
         
         # Step 3: Convert CSV to Excel
         run_script("csv_to_xlsx.py")
