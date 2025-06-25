@@ -1,0 +1,179 @@
+<svg viewBox="0 0 1400 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="800" fill="#2C3E50"/>
+  
+  <!-- Title -->
+  <text x="700" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="white">PCAP Incident Automation Process Flow</text>
+  
+  <!-- DATA INGESTION Section -->
+  <g>
+    <!-- Section background -->
+    <rect x="50" y="80" width="650" height="120" rx="10" fill="none" stroke="#4A90E2" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="70" y="105" font-size="12" font-weight="bold" fill="#4A90E2">📥 DATA INGESTION</text>
+    
+    <!-- START -->
+    <ellipse cx="120" cy="150" rx="50" ry="25" fill="#34495E" stroke="#BDC3C7" stroke-width="2"/>
+    <text x="120" y="157" text-anchor="middle" font-size="11" fill="white">START</text>
+    
+    <!-- Input PCAP File -->
+    <rect x="200" y="125" width="90" height="50" rx="5" fill="#4A90E2" stroke="#2980B9" stroke-width="2"/>
+    <text x="245" y="145" text-anchor="middle" font-size="10" fill="white">📁 Input</text>
+    <text x="245" y="158" text-anchor="middle" font-size="10" fill="white">PCAP File</text>
+    
+    <!-- Parse for IPs, MACs, Hostnames, Users -->
+    <rect x="320" y="125" width="90" height="50" rx="5" fill="#4A90E2" stroke="#2980B9" stroke-width="2"/>
+    <text x="365" y="140" text-anchor="middle" font-size="9" fill="white">🔍 Parse for IPs</text>
+    <text x="365" y="152" text-anchor="middle" font-size="9" fill="white">MACs, Hostnames</text>
+    <text x="365" y="164" text-anchor="middle" font-size="9" fill="white">Users</text>
+    
+    <!-- Extract Artifacts -->
+    <rect x="440" y="125" width="90" height="50" rx="5" fill="#4A90E2" stroke="#2980B9" stroke-width="2"/>
+    <text x="485" y="145" text-anchor="middle" font-size="10" fill="white">📋 Extract</text>
+    <text x="485" y="158" text-anchor="middle" font-size="10" fill="white">Artifacts</text>
+    
+    <!-- Lookup Indicators -->
+    <rect x="560" y="125" width="90" height="50" rx="5" fill="#4A90E2" stroke="#2980B9" stroke-width="2"/>
+    <text x="605" y="145" text-anchor="middle" font-size="10" fill="white">🔎 Lookup</text>
+    <text x="605" y="158" text-anchor="middle" font-size="10" fill="white">Indicators</text>
+  </g>
+  
+  <!-- Suspicious Activity Decision -->
+  <polygon points="375,230 425,250 375,270 325,250" fill="#E67E22" stroke="#D35400" stroke-width="2"/>
+  <text x="375" y="246" text-anchor="middle" font-size="9" fill="white">⚠️ Suspicious</text>
+  <text x="375" y="258" text-anchor="middle" font-size="9" fill="white">Activity?</text>
+  
+  <!-- No Path -->
+  <text x="280" y="255" font-size="10" fill="#BDC3C7">No</text>
+  <rect x="150" y="300" width="120" height="40" rx="5" fill="#4A90E2" stroke="#2980B9" stroke-width="2"/>
+  <text x="210" y="315" text-anchor="middle" font-size="10" fill="white">📄 Log as Benign</text>
+  <text x="210" y="328" text-anchor="middle" font-size="10" fill="white">or Unknown</text>
+  
+  <!-- INCIDENT HANDLING Section -->
+  <g>
+    <!-- Section background -->
+    <rect x="450" y="300" width="900" height="120" rx="10" fill="none" stroke="#4A90E2" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="470" y="325" font-size="12" font-weight="bold" fill="#4A90E2">🚨 INCIDENT HANDLING</text>
+    
+    <!-- Yes Path -->
+    <text x="420" y="285" font-size="10" fill="#BDC3C7">Yes</text>
+    
+    <!-- Classify Incidents -->
+    <rect x="480" y="340" width="90" height="50" rx="5" fill="#4A90E2" stroke="#2980B9" stroke-width="2"/>
+    <text x="525" y="360" text-anchor="middle" font-size="10" fill="white">📊 Classify</text>
+    <text x="525" y="373" text-anchor="middle" font-size="10" fill="white">Incidents</text>
+    
+    <!-- AI Remediation Recommendation -->
+    <rect x="600" y="340" width="90" height="50" rx="5" fill="#27AE60" stroke="#229954" stroke-width="2"/>
+    <text x="645" y="355" text-anchor="middle" font-size="9" fill="white">🤖 AI</text>
+    <text x="645" y="367" text-anchor="middle" font-size="9" fill="white">Remediation</text>
+    <text x="645" y="379" text-anchor="middle" font-size="9" fill="white">Recommendation</text>
+    
+    <!-- Human Approval Decision -->
+    <polygon points="745,340 795,365 745,390 695,365" fill="#E67E22" stroke="#D35400" stroke-width="2"/>
+    <text x="745" y="361" text-anchor="middle" font-size="9" fill="white">👤 Human</text>
+    <text x="745" y="373" text-anchor="middle" font-size="9" fill="white">Approval</text>
+    <text x="745" y="385" text-anchor="middle" font-size="9" fill="white">Decision</text>
+    
+    <!-- Manual Review -->
+    <rect x="820" y="340" width="90" height="50" rx="5" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2"/>
+    <text x="865" y="360" text-anchor="middle" font-size="10" fill="white">👥 Manual</text>
+    <text x="865" y="373" text-anchor="middle" font-size="10" fill="white">Review</text>
+    
+    <!-- Format Alerts as CSV -->
+    <rect x="940" y="340" width="90" height="50" rx="5" fill="#4A90E2" stroke="#2980B9" stroke-width="2"/>
+    <text x="985" y="355" text-anchor="middle" font-size="10" fill="white">📁 Format</text>
+    <text x="985" y="367" text-anchor="middle" font-size="10" fill="white">Alerts as</text>
+    <text x="985" y="379" text-anchor="middle" font-size="10" fill="white">CSV</text>
+    
+    <!-- Send Summary Email -->
+    <rect x="1060" y="340" width="90" height="50" rx="5" fill="#4A90E2" stroke="#2980B9" stroke-width="2"/>
+    <text x="1105" y="355" text-anchor="middle" font-size="10" fill="white">📧 Send</text>
+    <text x="1105" y="367" text-anchor="middle" font-size="10" fill="white">Summary</text>
+    <text x="1105" y="379" text-anchor="middle" font-size="10" fill="white">Email</text>
+    
+    <!-- Push Alerts to Integrations -->
+    <rect x="1180" y="340" width="90" height="50" rx="5" fill="#4A90E2" stroke="#2980B9" stroke-width="2"/>
+    <text x="1225" y="355" text-anchor="middle" font-size="10" fill="white">🔗 Push Alerts</text>
+    <text x="1225" y="367" text-anchor="middle" font-size="10" fill="white">to</text>
+    <text x="1225" y="379" text-anchor="middle" font-size="10" fill="white">Integrations</text>
+  </g>
+  
+  <!-- END -->
+  <ellipse cx="1225" cy="480" rx="50" ry="25" fill="#34495E" stroke="#BDC3C7" stroke-width="2"/>
+  <text x="1225" y="487" text-anchor="middle" font-size="11" fill="white">END</text>
+  
+  <!-- END for benign path -->
+  <ellipse cx="210" cy="380" rx="50" ry="25" fill="#34495E" stroke="#BDC3C7" stroke-width="2"/>
+  <text x="210" y="387" text-anchor="middle" font-size="11" fill="white">END</text>
+  
+  <!-- Flow Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" fill="#BDC3C7">
+      <polygon points="0 0, 10 3.5, 0 7"/>
+    </marker>
+  </defs>
+  
+  <!-- Data ingestion flow -->
+  <line x1="170" y1="150" x2="200" y2="150" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="290" y1="150" x2="320" y2="150" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="410" y1="150" x2="440" y2="150" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="530" y1="150" x2="560" y2="150" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- To decision -->
+  <line x1="605" y1="175" x2="605" y2="200" stroke="#BDC3C7" stroke-width="2"/>
+  <line x1="605" y1="200" x2="375" y2="200" stroke="#BDC3C7" stroke-width="2"/>
+  <line x1="375" y1="200" x2="375" y2="230" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- No path -->
+  <line x1="325" y1="250" x2="210" y2="250" stroke="#BDC3C7" stroke-width="2"/>
+  <line x1="210" y1="250" x2="210" y2="300" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="210" y1="340" x2="210" y2="355" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Yes path -->
+  <line x1="375" y1="270" x2="375" y2="290" stroke="#BDC3C7" stroke-width="2"/>
+  <line x1="375" y1="290" x2="525" y2="290" stroke="#BDC3C7" stroke-width="2"/>
+  <line x1="525" y1="290" x2="525" y2="340" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Incident handling flow -->
+  <line x1="570" y1="365" x2="600" y2="365" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="690" y1="365" x2="695" y2="365" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Decision paths -->
+  <text x="810" y="360" font-size="10" fill="#BDC3C7">Yes</text>
+  <line x1="795" y1="365" x2="820" y2="365" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="910" y1="365" x2="940" y2="365" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="1030" y1="365" x2="1060" y2="365" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="1150" y1="365" x2="1180" y2="365" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- To end -->
+  <line x1="1225" y1="390" x2="1225" y2="455" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- No approval path (could loop back) -->
+  <text x="750" y="320" font-size="10" fill="#BDC3C7">No</text>
+  <line x1="745" y1="340" x2="745" y2="320" stroke="#BDC3C7" stroke-width="2"/>
+  <line x1="745" y1="320" x2="865" y2="320" stroke="#BDC3C7" stroke-width="2"/>
+  <line x1="865" y1="320" x2="865" y2="340" stroke="#BDC3C7" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 500)">
+    <rect x="0" y="0" width="300" height="180" fill="#34495E" stroke="#4A90E2" stroke-width="1" rx="5"/>
+    <text x="10" y="20" font-size="14" font-weight="bold" fill="white">Legend:</text>
+    
+    <rect x="10" y="30" width="20" height="15" fill="#4A90E2" stroke="#2980B9"/>
+    <text x="35" y="42" font-size="11" fill="white">Automated Python Step</text>
+    
+    <rect x="10" y="50" width="20" height="15" fill="#27AE60" stroke="#229954"/>
+    <text x="35" y="62" font-size="11" fill="white">AI/LLM Operation</text>
+    
+    <polygon points="10,75 20,70 30,75 20,80" fill="#E67E22" stroke="#D35400"/>
+    <text x="35" y="77" font-size="11" fill="white">Decision/Branch</text>
+    
+    <rect x="10" y="85" width="20" height="15" fill="#95A5A6" stroke="#7F8C8D"/>
+    <text x="35" y="97" font-size="11" fill="white">Human Intervention</text>
+    
+    <text x="10" y="120" font-size="12" font-weight="bold" fill="#4A90E2">Key Features:</text>
+    <text x="10" y="135" font-size="10" fill="white">• Grouped workflow sections</text>
+    <text x="10" y="148" font-size="10" fill="white">• Clear decision points</text>
+    <text x="10" y="161" font-size="10" fill="white">• Human oversight integration</text>
+  </g>
+</svg>
