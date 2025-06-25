@@ -1,0 +1,7 @@
+scapy
+requests
+python-dotenv
+openai
+pandas
+xlsxwriter
+jira
