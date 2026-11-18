@@ -26,7 +26,7 @@
 
 - Python 3.8+
 - [pip](https://pip.pypa.io/en/stable/)
-- Place a PCAP file named `capture.pcap` in the project directory or specify your own.
+- Place a PCAP file named `capture.pcap` in the project directory (or run `python pcap_analyzer.py yourfile.pcap` for a different file).
 
 ### Installation
 
@@ -56,15 +56,24 @@ GROQ_API_KEY=your_groq_api_key
 
 # Jira integration
 JIRA_URL=https://your-domain.atlassian.net
-JIRA_API_TOKEN=your_jira_api_token
-JIRA_USER_EMAIL=your_email@example.com
+JIRA_TOKEN=your_jira_api_token
+JIRA_EMAIL=your_email@example.com
 JIRA_PROJECT_KEY=YOURPROJECTKEY
 ```
 
 - `JIRA_URL`: Your Jira Cloud site URL (e.g., https://example.atlassian.net)
-- `JIRA_API_TOKEN`: Your Jira API token ([how to create](https://id.atlassian.com/manage-profile/security/api-tokens))
-- `JIRA_USER_EMAIL`: The email address associated with your Jira account
+- `JIRA_TOKEN`: Your Jira API token ([how to create](https://id.atlassian.com/manage-profile/security/api-tokens))
+- `JIRA_EMAIL`: The email address associated with your Jira account
 - `JIRA_PROJECT_KEY`: The key of the project where tickets will be created
+
+## Outputs
+
+| Stage | File |
+|---|---|
+| PCAP analysis | `report.json` |
+| Threat intelligence | `threat_report.json` |
+| LLM recommendations | `recommendations.csv` |
+| Excel report | `recommendations.xlsx` |
 
 ## File Structure
 
