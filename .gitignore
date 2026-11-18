@@ -1,0 +1,9 @@
+.env
+*.pcap
+*.pcapng
+report.json
+threat_report.json
+recommendations.csv
+recommendations.xlsx
+__pycache__/
+.venv/
